@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Fundamentos do PHP</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L2 - Exercício 01 - Tratamento de vetores na linguagem PHP - exercicios de aprendizagem</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL2/Exercicio01/exerc1.html-->
+    <p><b>Exercício 01</b>-Elabore um script em PHP que receba, de um formulário, a nota de cada aluno na primeira avaliação de Programação Web. Cadastre a nota de três alunos. 0 script em PHP deverá: - Armazenar estas notas em um vetor de índice numérico; - Calcular e mostrar a média das notas por meio de uma função que execute esta tarefa manipulando diretamente os dados do vetor.
+    </p>
+    <form action="exerc1.php" method="post">  
+      <!--Arquivo php que vai receber os dados--> 
+      <!-- post (método com criptografia) x get (sem criptografia e padrão se não definir nada)-->
+      <fieldset>
+        <legend>Nota de PRW aluno 1</legend>
+        <label>Nota:</label> <!--tirou classe alinha-->
+        <input type="number" name="nota1" min="0" max="10" step="0.1"
+        autofocus>
+      </fieldset>
+
+      <fieldset>
+        <legend>Nota de PRW aluno 2</legend>
+        <label>Nota:</label> <!--tirou classe alinha-->
+        <input type="number" name="nota2" min="0" max="10" step="0.1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Nota de PRW aluno 3</legend>
+        <label>Nota:</label> <!--tirou classe alinha-->
+        <input type="number" name="nota3" min="0" max="10" step="0.1">
+      </fieldset>
+
+        <button>Calcular</button>
+    </form>
+</body> 
+</html>

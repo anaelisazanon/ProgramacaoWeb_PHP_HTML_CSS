@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Vetores</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L2 - Exercício 04 - Tratamento de vetores na linguagem PHP - exercicios de aprendizagem</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL2/Exercicio04/exerc4.html-->
+    <p><b>Exercício 04</b> - Criar uma aplicação web simulando um carrinho de compras simplificado. Em um formulário, o cliente pode escolher até três produtos quaisquer, por meio de elementos checkbox. Em seguida, um script em PHP deverá cadastrar, em um vetor de índice associativo, o preço de cada mercadoria a ser adquirida. Use o nome da mercadoria de cada checkbox como índice associativo deste vetor. Finalmente, o script em PHP deverá mostrar na página web o valor final da compra decorrente dos produtos adquiridos pelo cliente no formulário.
+
+    </p>
+    <form action="exerc4.php" method="post">
+      <fieldset>
+        <legend>Carrinho de compras PHP</legend>
+        <label>Escolha produto para comprar:</label><br>
+
+        <input type="checkbox" name="produtos[]" value="Produto cosmético" autofocus>
+        <label>Produto cosmético</label><br>
+
+        <input type="checkbox" name="produtos[]" value="Chocolate" autofocus>
+        <label>Chocolate</label><br>
+
+        <input type="checkbox" name="produtos[]" value="Tênis" autofocus>
+        <label>Tênis</label><br>
+
+      </fieldset>
+      <button>Calcular valor final</button>
+    </form>
+</body> 
+</html>

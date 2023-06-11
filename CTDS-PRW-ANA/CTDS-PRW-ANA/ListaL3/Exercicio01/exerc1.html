@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Matrizes</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L3 - Exercício 01 - Tratamento de Matrizes na linguagem PHP - Ordenação por índice</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL3/Exercicio01/exerc1.html-->
+    <p><b>Exercício 01</b> - Para cada aluno da Unidade Curricular Programação Web, do Curso CTDS, temos o seu número de matrícula, seu nome e sua média final.
+    <br>Criar um formulário que cadastre esses dados para três alunos quaisquer. Em seguida, criar um script em PHP que:
+    <br>Armazene esses dados em uma estrutura matricial. Use o número de matrícula como índice associativo;
+    <br>Mostrar os dados dos três alunos cadastrados no formato tabular.
+    </p>
+    <form action="exerc1.php" method="post">
+      <fieldset>
+        <legend>Cadastro do Aluno 1:</legend>
+        <label class="alinha">Nome 1:</label>
+        <input type="text" name="nome1" autofocus><br>
+        <label class="alinha">Matrícula 1:</label>
+        <input type="text" name="matricula1" >
+        <label class="alinha">Média PRW 1:</label>
+        <input type="number" name="media1" min="0" max="10" set="0.1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Cadastro do Aluno 2:</legend>
+        <label class="alinha">Nome 2:</label>
+        <input type="text" name="nome2"><br>
+        <label class="alinha">Matrícula 2:</label>
+        <input type="text" name="matricula2" >
+        <label class="alinha">Média PRW 2:</label>
+        <input type="number" name="media2" min="0" max="10" set="0.1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Cadastro do Aluno 3:</legend>
+        <label class="alinha">Nome 3:</label>
+        <input type="text" name="nome3"><br>
+        <label class="alinha">Matrícula 3:</label>
+        <input type="text" name="matricula3" >
+        <label class="alinha">Média PRW 3:</label>
+        <input type="number" name="media3" min="0" max="10" set="0.1">
+      </fieldset>
+
+      <button>Calcular</button>
+    </form>
+</body> 
+</html>

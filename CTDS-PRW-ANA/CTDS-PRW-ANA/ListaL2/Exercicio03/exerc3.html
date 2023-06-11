@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Vetores</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L2 - Exercício 03 - Tratamento de vetores na linguagem PHP - exercicios de aprendizagem</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL2/Exercicio02/exerc2.html-->
+    <p><b>Exercício 03</b> - Elabore um script em PHP que receba, de um formulário, o nome e a nota de cada aluno na primeira avaliação de Programação Web. Cadastre os dados de três alunos. O script em PHP deverá:
+      <br>- Armazenar estas notas em um vetor de índice associativo, usando o nome do aluno como índice;
+      <br>- Ordenar o vetor, da maior nota para a menor nota (decrescentemente);
+      <br>- Mostrar, na página web, no formato tabular, os dados de cada aluno;
+       
+    </p>
+    <form action="exerc3.php" method="post">
+      <fieldset>
+        <legend>Nota de PRW aluno 1</legend>
+        <label>Nome:</label>
+        <input type="text" name="nome1" autofocus>
+        <label>Nota:</label>
+        <input type="number" name="nota1" min="0" max="10" step="0.1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Nota de PRW aluno 2</legend>
+        <label>Nome:</label>
+        <input type="text" name="nome2" autofocus>
+        <label>Nota:</label>
+        <input type="number" name="nota2" min="0" max="10" step="0.1">
+      </fieldset>
+
+      <fieldset>
+        <legend>Nota de PRW aluno 3</legend>
+        <label>Nome:</label>
+        <input type="text" name="nome3" autofocus>
+        <label>Nota:</label>
+        <input type="number" name="nota3" min="0" max="10" step="0.1">
+      </fieldset>
+      <button>Calcular</button>
+    </form>
+</body> 
+</html>

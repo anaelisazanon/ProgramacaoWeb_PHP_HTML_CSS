@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Fundamentos do PHP</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L1 - Exercício 05 - Aplicação Financeira com PHP</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL1/Exercicio05/exerc5.html-->
+    <p><b>Exercício 05</b>- Crie uma aplicação web destinada a converter uma certa quantidade de dólares em reais. À taxa de câmbio deve ser usada no script em PHP como uma constante. O valor em dólares deve ser fornecido em um campo de formulário, pelo método POST. À aplicação deve retornar, ao usuário, as seguintes informações: A quantidade convertida em reais.
+    </p>
+    <form action="exerc5.php" method="POST">
+      <!--Arquivo php que vai receber os dados--> 
+      <!-- post (método com criptografia) x get (sem criptografia e padrão se não definir nada)-->
+      <fieldset>
+        <legend>Aplicativo para conversão de câmbio</legend>
+        <label class="alinha">Forneça o valor em dólares para ser convertido:</label>
+        <input type="number" name="quantos-dolares" min="0" placeholder="Forneça o valor" step="0.01" autofocus > <br>
+        <button>Converter</button>
+      </fieldset>
+    </form>
+</body> 
+</html>

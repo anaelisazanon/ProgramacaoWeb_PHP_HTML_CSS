@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Fundamentos do PHP</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L1 - Exercício 10 - Ana Elisa Zanon </h1>
+    <!--http://localhost/ctds-prw-ana/ListaL1/Exercicio10/exerc10.html-->
+    <p><b>Exercício 10</b> - 
+      Determinada rede de farmácias de nossa cidade concede um desconto na compra de medicamentos a seus clientes idosos, de acordo com a situação abaixo:
+      
+      <br>- Clientes com menos de 55 anos não têm nenhum desconto;
+      <br>- Clientes entre 55 anos e 70 anos (inclusive) obtêm 5% de desconto sobre o valor da compra;
+      <br>- Clientes acima de 70 anos ganham 7% de desconto sobre o valor da compra.
+      <br>
+      <br>Além disso, se o pagamento for feito por meio de cartão de fidelidade da rede, tem-se um desconto adicional de mais 5% em relação aos descontos anteriores, independentemente da idade, isto é: cliente com menos de 55 anos terá desconto de 5%; cliente entre 55 anos e 70 anos, que pagou com cartão, terá um desconto total sobre a compra de 10%. Cliente acima de 70 anos, pagando com cartão, terá desconto de 12%. Use o elemento checkbox para representar esta informação no formulário.
+      
+      <br>Crie uma aplicação web, por meio da linguagem PHP, que permita a um vendedor fornecer, em um formulário HTMLS, as informações acima sobre a compra de determinado cliente. Em seguida, o script em PHP deverá mostrar o valor final da compra a ser pago pelo cliente. Não se esqueça de testar se um botão de rádio relacionado à faixa etária do cliente foi marcado. Se isto não ocorreu, mostre uma mensagem adequada ao usuário e encerre a aplicação web.  
+    </p>
+    <form action="exerc10.php" method="POST">
+      <fieldset>
+        <legend>Farmácia</legend>
+
+        <label class="alinha">Forneça o valor da compra:</label>
+        <input type="number" name="valor-compra" min="0" placeholder="Forneça o valor" step="0.1" autofocus > <br>
+
+        <label class="alinha">Faixa etária cliente: </label><br>
+        <input type="radio" name="idade" value="0">
+        <label>Cliente com menos de 55 anos - Sem desconto</label><br>
+        <input type="radio" name="idade" value="1">
+        <label>Cliente entre 55 anos e 70 anos (inclusive) - 5% de desconto</label><br>
+        <input type="radio" name="idade" value="2">
+        <label>Clientes acima de 70 anos - 7% de desconto </label><br><br>
+
+        <label class="alinha">Selecione a opção se o cliente possuir Fidelidade: </label><br>
+        <input type="checkbox" name="fidelidade" value="0">
+        <label>Cartão de fidelidade da rede</label><br><br>
+
+        <button>Calcular valor final</button>
+      </fieldset>
+    </form>
+</body> 
+</html>

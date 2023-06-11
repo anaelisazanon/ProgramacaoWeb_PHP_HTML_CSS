@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Fundamentos do PHP</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L1 - Exercício 08 - Supermercado - Processamento de Vendas</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL1/Exercicio07/exerc7.html-->
+    <p><b>Exercício 07/08</b>- Um determinado supermercado de nossa região oferece um desconto de 5% sobre o valor total da compra de determinado cliente, no caso deste cliente efetuar o pagamento com cartão. Também, o supermercado oferece o serviço de entrega domiciliar da compra. Neste caso, o supermercado cobra um percentual de 2% sobre o valor da compra, para a entrega no domicílio. Elabore um formulário em HTML5 que contenha os campos descritos na situação acima. Em seguida, crie um script em PHP que receba os dados deste formulário e calcule e mostre ao usuário o valor final da compra, levando-se em consideração o pagamento com cartão e a entrega domiciliar. Utilize elementos botões de rádio no formulário para permitir ao usuário introduzir as informações relacionados a pagamento com cartão e entrega da compra a domicílio. <br>
+    Ex 08 - Repita o exercício anterior, alterando a interface gráfica para que o formulário apresente botões de checkbox (ao invés de botões de rádio) ao usuário, de forma a se obter as informações relacionados a pagamento com cartão e entrega domiciliar.
+    </p>
+    <form action="exerc8.php" method="POST">
+      <!--Arquivo php que vai receber os dados--> 
+      <!-- post (método com criptografia) x get (sem criptografia e padrão se não definir nada)-->
+      <fieldset>
+        <legend>Supermercado - Processamento de vendas com PHP:</legend>
+
+        <label class="alinha">Forneça o valor da compra do cliente:</label>
+        <input type="number" name="valor-compra" min="0" placeholder="Forneça o valor" step="0.01" autofocus > <br>
+
+        <label>Forma de Pagamento: </label><br>
+        <input type="checkbox" name="forma-pagamento" value="0">
+        <label>Marque esta opção se o cliente pagou com cartão</label><br>
+        <input type="checkbox" name="forma-entrega" value="0">
+        <label>Marque esta opção se o cliente solicitou entrega da compra a domicílio</label><br><br>
+
+        <button>Calcular valor final da compra</button>
+      </fieldset>
+    </form>
+</body> 
+</html>

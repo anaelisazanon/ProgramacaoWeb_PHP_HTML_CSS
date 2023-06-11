@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Vetores</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L2 - Exercício 07 - Tratamento de vetores na linguagem PHP - Ordenação por índice</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL2/Exercicio07/exerc7.html-->
+    <p><b>Exercício 07</b> - Elabore um script em PHP que receba, de um formulário, o nome e idade de três pessoas quaisquer. O script em PHP deverá:
+    <br>- Armazenar estas idades em um vetor de índice associativo, usando o nome da pessoa como índice;
+    <br>-Ordenar o vetor, por ordem alfabética crescente (de A até Z) pelo nome da pessoa;
+    <br>- Mostrar, na página web, no formato tabular, os dados de cada pessoa cadastrada;
+      
+    </p>
+    <form action="exerc7.php" method="post">
+      <fieldset>
+        <legend>Cadastro Pessoa 1:</legend>
+        <label>Nome:</label>
+        <input type="text" name="nome1" autofocus>
+        <label>Idade:</label>
+        <input type="number" name="idade1" min="0" max="160" >
+      </fieldset>
+
+      <fieldset>
+        <legend>Cadastro Pessoa 2:</legend>
+        <label>Nome:</label>
+        <input type="text" name="nome2">
+        <label>Idade:</label>
+        <input type="number" name="idade2" min="0" max="160" >
+      </fieldset>
+
+      <fieldset>
+        <legend>Cadastro Pessoa 3:</legend>
+        <label>Nome:</label>
+        <input type="text" name="nome3">
+        <label>Idade:</label>
+        <input type="number" name="idade3" min="0" max="160" >
+      </fieldset>
+
+      <button>Calcular</button>
+    </form>
+</body> 
+</html>

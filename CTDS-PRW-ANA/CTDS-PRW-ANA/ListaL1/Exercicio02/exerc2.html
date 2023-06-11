@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Fundamentos do PHP</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L1 - Exercício 02 - Viagem da Maria em PHP</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL1/Exercicio02/exerc2.html-->
+    <p><b>Exercício 02</b>- Maria quer viajar até a casa de sua irmã, de carro, e gostaria de saber, antecipadamente, quantos litros de gasolina irá gastar e qual o valor que terá de desembolsar pelo combustível gasto na viagem. Faça um script em PHP que receba de um formulário HTML os seguintes dados: “ A distância da casa de Maria até a casa de sua irmã, em km; “O consumo de seu carro, em km/litro; "O preço da gasolina no posto onde Maria abastece." Em seguida: a) Faça com que o código em PHP armazene e manipule o preço da gasolina como uma constante; b) Faça com que a aplicação mostre ao usuário o gasto que o mesmo terá com a viagem; c) Faça com que a aplicação mostre quantos litros de combustível serão consumidos na viagem; d) Faça com que a aplicação mostre o preço pago por litro de combustível.  
+    </p>
+    <form action="exerc2.php" method="post">
+      <!--Arquivo php que vai receber os dados--> 
+      <!-- post (método com criptografia) x get (sem criptografia e padrão se não definir nada)-->
+      <fieldset>
+        <legend>Dados de Gastos da Viagem da Maria</legend>
+
+        <label class="alinha">Distância (Km):</label>
+        <input type="number" name="distancia" min="0" placeholder="Forneça a distância da casa de Maria até a casa de sua irmã, em km" autofocus> <br><!--name é o CPF da caixa-->
+
+        <label class="alinha">Consumo do carro (L):</label>
+        <input type="number" name="consumo" min="0" placeholder="Forneça o consumo de seu carro, em km/litro"><br>
+
+        <label class="alinha">Preço por Litro (R$/L):</label>
+        <input type="number" name="preco" min="0" step="0.01" placeholder="Forneça o preço da gasolina no posto onde Maria abastece"><br>
+
+        <button>Processar dados da viagem</button>
+      </fieldset>
+    </form>
+</body> 
+</html>

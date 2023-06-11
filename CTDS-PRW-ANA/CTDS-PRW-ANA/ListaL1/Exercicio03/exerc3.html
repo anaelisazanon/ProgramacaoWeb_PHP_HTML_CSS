@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Fundamentos do PHP</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L1 - Exercício 03 - Loja</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL1/Exercicio03/exerc3.html-->
+    <p><b>Exercício 03</b>- Crie um script em PHP para auxiliar vendedores de uma loja. Fornecendo-se o valor da venda de determinado vendedor em um formulário web (com método GET), a aplicação deverá mostrar: a) O valor do desconto obtido pelo cliente (10% sobre o total da compra); b) O valor do ICMS pago pela loja (12% sobre o total da compra); c) A comissão do vendedor (5% sobre o total da compra).
+    </p>
+    <form action="exerc3.php" method="GET">
+      <!--Arquivo php que vai receber os dados--> 
+      <!-- post (método com criptografia) x get (sem criptografia e padrão se não definir nada)-->
+      <fieldset>
+        <legend>Processamento de Vendas - Loja</legend>
+        <label class="alinha">Valor da Venda:</label> <!-- N PRECISA DA CLASSE ALINHA POIS SÓ É UM VALOR -->
+        <input type="number" name="valorVenda" min="0" max="100000" placeholder="Forneça o valor da venda" step="0.01" autofocus > <br>
+        <button>Processar dados da venda</button>
+      </fieldset>
+    </form>
+</body> 
+</html>

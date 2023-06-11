@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Vetores</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L2 - Exercício 08 - Tratamento de vetores na linguagem PHP - exercicios de aprendizagem</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL2/Exercicio08/exerc8.html-->
+    <p><b>Exercício 08</b> - Criar uma aplicação web destinada a auxiliar a compra de medicamentos. Em um formulário, o cliente pode escolher até três medicamentos quaisquer, por meio de elementos checkbox. Em seguida, um script em PHP deverá cadastrar, em um vetor de índice associativo, o preço de cada medicamento a ser adquirido. Use o nome do remédio de cada checkbox como índice associativo deste vetor. 
+    <br>Também, o formulário deve apresentar um checkbox para que o usuário da aplicação mencione se o cliente em questão terá 60 anos de idade ou mais.
+    <br>Finalmente, o script em PHP deverá mostrar na página web o valor final da compra decorrente dos remédios adquiridos pelo cliente no formulário. Notar que, se o cliente tiver 60 anos ou mais, ele terá direito a um desconto de 5% no valor pago inicialmente por todos os medicamentos comprados.
+    </p>
+    <form action="exerc8.php" method="post">
+      <fieldset>
+        <legend>Farmácias AAA</legend>
+        <label>Escolha produto para comprar:</label><br>
+
+        <input type="checkbox" name="produtos[]" value="Dorflex" autofocus>
+        <label>Dorflex</label><br>
+
+        <input type="checkbox" name="produtos[]" value="Rivotril" autofocus>
+        <label>Rivotril</label><br>
+
+        <input type="checkbox" name="produtos[]" value="Vonau" autofocus>
+        <label>Vonau</label><br><br>
+
+        <input type="checkbox" name="faixa-etaria[]" value="0" autofocus>
+        <label>Marque essa opção se o cliente tem 60 anos ou mais (desconto de 5%)</label><br><br>
+
+      </fieldset>
+      <button>Calcular valor final</button>
+    </form>
+</body> 
+</html>

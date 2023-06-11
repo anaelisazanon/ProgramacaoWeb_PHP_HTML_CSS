@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/*não copia a tag style*/
+body{
+    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url(img1.jpg);
+}
+h1{
+    margin:0; /*ficar no topo do navegador*/
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 35px;
+    box-shadow: 0 0 5px 5px #cbc6ec;
+    color: #ffffff;
+    /*manipular imagens de fundo*/
+    background-image: url('https://wallpapercave.com/wp/wp4586754.jpg');
+    /*background-repeat: no-repeat; não repete o fundo, estica*/
+    /*background-repeat: repeat-x; repete o fundo no eixo horizontal*/
+    background-repeat: repeat-x;
+    background-size: 200px 500px; /* OU usar 100% 50%*/
+    text-shadow: 1px 1px 5px #19162e;
+}
+fieldset{ /*formaulario*/
+    width: 50%;
+    margin: 30px auto; /*30px do topo, empurra o formulário para baixo*/
+    /*auto deixa no meio*/
+    box-shadow: 5px 5px 5px #ffffff;
+    background-color:#ffffffad; /*rgba(107, 160, 153, 0.5)          a=transparência // 50% de opacidade*/
+}
+label.alinha{ /* usar classe alinha */  
+    border: 0px solid;
+    /* width: 300px; não funciona pois o label é um elemento INLINE -  não aceita margem automática// tem que usar display para bloco */
+    /* display: block; todos os labels com a mesma largura que é total */
+    display: inline-block;
+    /*+*/
+    width: 170px; 
+    text-align: right;
+    margin-bottom: 10px; /* separa as caixas para não deixar grudadas */
+}
+button{
+    height: 40px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+input[name="nome-aluno"]{
+    width: 290px;
+}
+
+p{
+    border: #ffffff;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px; /*texto nas bordas da página*/
+    background-color:#ffffffad;
+}
+
+span{
+    font-weight: bold;
+    color: #1c0f70;
+}

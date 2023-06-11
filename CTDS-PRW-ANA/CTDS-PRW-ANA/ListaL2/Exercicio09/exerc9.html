@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Vetores</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L2 - Exercício 09 - Tratamento de vetores na linguagem PHP - exercicios de aprendizagem</h1>
+    <!--http://localhost/ctds-prw-ana/ListaL2/Exercicio09/exerc9.html-->
+    <p><b>Exercício 09</b> - Criar uma aplicação web destinada a auxiliar a compra de gêneros alimentícios on-line. Em um formulário, o cliente pode escolher até quatro produtos quaisquer, por meio de elementos checkbox. Em seguida, um script em PHP deverá criar e cadastrar, em um vetor de índice associativo, o preço de cada produto a ser adquirido. Use o nome do produto de cada checkbox como índice associativo deste vetor. Também, o formulário deve apresentar um checkbox para que o cliente informe se está pagando a compra feita com cartão de fidelidade do estabelecimento. Se sim, o cliente terá direito a um desconto de 5% em relação ao valor inicial da compra. Finalmente, o script em PHP deverá mostrar na página web o valor final da compra efetuada pelo cliente.
+    </p>
+    <form action="exerc9.php" method="post">
+      <fieldset>
+        <legend>Loja</legend>
+        <label>Escolha produto para comprar:</label><br>
+
+        <input type="checkbox" name="produtos[]" value="arroz" autofocus>
+        <label>Arroz</label><br>
+
+        <input type="checkbox" name="produtos[]" value="feijao" autofocus>
+        <label>Feijao</label><br>
+
+        <input type="checkbox" name="produtos[]" value="carne" autofocus>
+        <label>Carne</label><br>
+
+        <input type="checkbox" name="produtos[]" value="verduras" autofocus>
+        <label>Verduras</label><br><br>
+
+        <input type="checkbox" name="descontofidel[]" value="0" autofocus>
+        <label>Marque essa opção se o cliente tem cartão fidelidade (desconto de 5%)</label><br><br>
+
+      </fieldset>
+      <button>Calcular valor final</button>
+    </form>
+</body> 
+</html>

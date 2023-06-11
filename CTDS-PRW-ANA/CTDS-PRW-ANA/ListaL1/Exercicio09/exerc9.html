@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Fundamentos do PHP</title>
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+<body> 
+    <h1>Lista L1 - Exercício 09 </h1>
+    <!--http://localhost/ctds-prw-ana/ListaL1/Exercicio09/exerc9.html-->
+    <p><b>Exercício 09</b>- Uma certa loja do centro de nossa cidade oferece a possibilidade de pagamento à vista ou a prazo. Se o cliente escolher o pagamento à vista, a loja concede um desconto de 5% sobre o valor da compra. Se o pagamento for a prazo, o valor da compra sofre um acréscimo de 2%. Também, há a possibilidade de se utilizar pagamento com cartão com a bandeira Visa. Neste caso, o cliente estará automaticamente concorrendo ao sorteio de um automóvel, oferecido pela loja. Tendo em vista estas informações, elaborar um formulário em HTMLS que contenha:<br>
+      - Um campo para o usuário fornecer o valor da compra de determinado cliente;<br>
+      - Botões de rádio para indicar se o pagamento será feito à vista ou a prazo;<br>
+      - Um checkbox para indicar se o pagamento será feito com cartão Visa.<br>
+      
+      Após isso, criar um script em PHP que receba os dados deste formulário. Ao final do script, a aplicação deverá:
+      <br>
+      a) Mostrar ao usuário da aplicação o valor final da compra;
+      <br>
+      b) Mostrar ao usuário se o cliente está apto a participar do sorteio ou não.
+      
+    </p>
+    <form action="exerc9.php" method="POST">
+      <!--Arquivo php que vai receber os dados--> 
+      <!-- post (método com criptografia) x get (sem criptografia e padrão se não definir nada)-->
+      <fieldset>
+        <legend>Loja</legend>
+
+        <label class="alinha">Forneça o valor:</label>
+        <input type="number" name="valor-compra" min="0" placeholder="Forneça o valor" step="0.01" autofocus > <br>
+
+        <label>Forma de Pagamento: </label><br>
+        <input type="radio" name="forma-pagamento" value="0">
+        <label>À vista</label><br>
+        <input type="radio" name="forma-pagamento" value="1">
+        <label>A prazo</label><br><br>
+
+        <input type="checkbox" name="visa" value="0">
+        <label>Pagamento com cartão visa</label><br><br>
+
+        <button>Calcular valor final</button>
+      </fieldset>
+    </form>
+</body> 
+</html>
